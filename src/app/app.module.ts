@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './components/shared/shared.module'
 import { MainPagesModule } from './components/main-pages/main-pages.module'
+import { MyOwnCustomMaterialModule } from './core/AngularMaterials/MyOwnCustomMaterial.module'
 
 import { AppComponent } from './app.component';
 
@@ -19,6 +20,7 @@ import { AboutUsComponent } from './components/main-pages/about-us/about-us.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MyOwnCustomMaterialModule,
     SharedModule,
     MainPagesModule
   ],
