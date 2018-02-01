@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
     
    }
  
-
   ngOnInit() {
     this.carouselBanner = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
@@ -56,12 +55,10 @@ export class HomeComponent implements OnInit {
     }
   }
  
-  /* This will be triggered after carousel viewed */
   afterCarouselViewedFn(data) {
     console.log(data);
   }
 
-  /* It will be triggered on every slide*/
   onmoveFn(data: NgxCarouselStore) {
     console.log(data);
   }
