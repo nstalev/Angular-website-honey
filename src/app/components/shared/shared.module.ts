@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import {MyOwnCustomMaterialModule} from './../../core/AngularMaterials/MyOwnCustomMaterial.module'
 
 import {SharedComponents } from './index'
 
@@ -13,6 +14,7 @@ import {SharedComponents } from './index'
     imports: [
       CommonModule,
       RouterModule,
+      MyOwnCustomMaterialModule
     ],
     exports: [
       ...SharedComponents
