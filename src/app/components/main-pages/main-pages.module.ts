@@ -1,6 +1,10 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import { NgxCarouselModule } from 'ngx-carousel';
+
+
+import 'hammerjs';
 
 import {MyOwnCustomMaterialModule} from './../../core/AngularMaterials/MyOwnCustomMaterial.module'
 import { MainPagesComponents } from './index'
@@ -13,7 +17,8 @@ import { MainPagesComponents } from './index'
     imports: [
       CommonModule,
       MyOwnCustomMaterialModule,
-      RouterModule
+      RouterModule,
+      NgxCarouselModule
     ],
     exports: [
       ...MainPagesComponents
