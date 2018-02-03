@@ -7,12 +7,14 @@ import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 
 import {MyOwnCustomMaterialModule} from './../../core/AngularMaterials/MyOwnCustomMaterial.module'
-import { MainPagesComponents } from './index'
+import { MainPagesComponents } from './index';
+import { GalleryComponent } from './gallery/gallery.component'
 
 
 @NgModule({
     declarations: [
-      ...MainPagesComponents
+      ...MainPagesComponents,
+      GalleryComponent
     ],
     imports: [
       CommonModule,
